@@ -20,13 +20,13 @@
                 <span class="nav-icon">📚</span>
                 History-Geography
             </button>
-            <button class="nav-btn" data-strand="connaissance">
-                <span class="nav-icon">🌍</span>
-                Connaissance Du Monde
-            </button>
             <button class="nav-btn" data-strand="litterature">
                 <span class="nav-icon">📖</span>
                 Littérature
+            </button>
+            <button class="nav-btn" data-strand="connaissance">
+                <span class="nav-icon">🌍</span>
+                Connaissance Du Monde
             </button>
         </nav>
 
@@ -38,37 +38,51 @@
                 
                 <!-- History Subsection -->
                 <div class="subsection">
-                    <div class="subsection-header">
-                        <h3>📜 History</h3>
-                        <button class="add-pdf-btn" data-subsection="history">+ Add PDF</button>
-                    </div>
+                    <h3>📜 History</h3>
                     <div class="pdf-list" id="history-pdfs">
-                        <p class="empty-message">No PDFs yet. Add your first study material!</p>
+                        <div class="pdf-item">
+                            <div class="pdf-info">
+                                <span class="pdf-icon">📄</span>
+                                <a class="pdf-name" href="History/Assess the Role of Totalitarianism in the collapse of global peace in the late 30's.pdf" target="_blank">Assess the Role of Totalitarianism in the collapse of global peace in the late 30's</a>
+                            </div>
+                        </div>
+                        <div class="pdf-item">
+                            <div class="pdf-info">
+                                <span class="pdf-icon">📄</span>
+                                <a class="pdf-name" href="History/Assess the role of Ronald Reagan in bringing the Cold War to and end .pdf" target="_blank">Assess the role of Ronald Reagan in bringing the Cold War to and end</a>
+                            </div>
+                        </div>
+                        <div class="pdf-item">
+                            <div class="pdf-info">
+                                <span class="pdf-icon">📄</span>
+                                <a class="pdf-name" href="History/The Pursuit of national self-interest by both the USA and the USSR was a key cause of the Cold War. How far do you agree ? .pdf" target="_blank">The Pursuit of national self-interest by both the USA and the USSR was a key cause of the Cold War</a>
+                            </div>
+                        </div>
+                        <div class="pdf-item">
+                            <div class="pdf-info">
+                                <span class="pdf-icon">📄</span>
+                                <a class="pdf-name" href="History/Was There A Thatcher Revolution?.pdf" target="_blank">Was There A Thatcher Revolution?</a>
+                            </div>
+                        </div>
+                        <div class="pdf-item">
+                            <div class="pdf-info">
+                                <span class="pdf-icon">📄</span>
+                                <a class="pdf-name" href="History/With reference to Britain - 45-51 - Hope did they respond to the post-war period problems .pdf" target="_blank">With reference to Britain - 45-51 - How did they respond to the post-war period problems</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Geography Subsection -->
                 <div class="subsection">
-                    <div class="subsection-header">
-                        <h3>🗺️ Geography</h3>
-                        <button class="add-pdf-btn" data-subsection="geography">+ Add PDF</button>
-                    </div>
+                    <h3>🗺️ Geography</h3>
                     <div class="pdf-list" id="geography-pdfs">
-                        <p class="empty-message">No PDFs yet. Add your first study material!</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Connaissance Du Monde Strand -->
-            <section id="connaissance" class="strand">
-                <h2>Connaissance Du Monde</h2>
-                <div class="subsection">
-                    <div class="subsection-header">
-                        <h3>🌍 Global Knowledge</h3>
-                        <button class="add-pdf-btn" data-subsection="connaissance">+ Add PDF</button>
-                    </div>
-                    <div class="pdf-list" id="connaissance-pdfs">
-                        <p class="empty-message">No PDFs yet. Add your first study material!</p>
+                        <div class="pdf-item">
+                            <div class="pdf-info">
+                                <span class="pdf-icon">📄</span>
+                                <a class="pdf-name" href="Geography/Compare and contrast the success of different strategies in increasing integration into the global economy .pdf" target="_blank">Compare and contrast the success of different strategies in increasing integration into the global economy</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -77,19 +91,40 @@
             <section id="litterature" class="strand">
                 <h2>Littérature</h2>
                 <div class="subsection">
-                    <div class="subsection-header">
-                        <h3>📚 Literature Resources</h3>
-                        <button class="add-pdf-btn" data-subsection="litterature">+ Add PDF</button>
-                    </div>
+                    <h3>📚 Literature Resources</h3>
                     <div class="pdf-list" id="litterature-pdfs">
-                        <p class="empty-message">No PDFs yet. Add your first study material!</p>
+                        <div class="pdf-item">
+                            <div class="pdf-info">
+                                <span class="pdf-icon">📄</span>
+                                <a class="pdf-name" href="Litterature/Gothic orals .pdf" target="_blank">Gothic Orals</a>
+                            </div>
+                        </div>
+                        <div class="pdf-item">
+                            <div class="pdf-info">
+                                <span class="pdf-icon">📄</span>
+                                <a class="pdf-name" href="Litterature/PW CDM.pdf" target="_blank">PW CDM</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Connaissance Du Monde Strand -->
+            <section id="connaissance" class="strand">
+                <h2>Connaissance Du Monde</h2>
+                <div class="subsection">
+                    <h3>🌍 Global Knowledge</h3>
+                    <div class="pdf-list" id="connaissance-pdfs">
+                        <div class="pdf-item">
+                            <div class="pdf-info">
+                                <span class="pdf-icon">📄</span>
+                                <a class="pdf-name" href="Connaissance/CDM ORAL .pdf" target="_blank">CDM ORAL</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
-
-        <!-- Hidden file input -->
-        <input type="file" id="file-input" accept=".pdf" style="display: none;">
     </div>
 
     <script src="script.js"></script>

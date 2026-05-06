@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baccalauréat Preparation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Baccalauréat Preparation</h1>
+            <p class="subtitle">Study Materials & Resources</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <button class="nav-btn active" data-strand="history-geography">
+                <span class="nav-icon">📚</span>
+                History-Geography
+            </button>
+            <button class="nav-btn" data-strand="connaissance">
+                <span class="nav-icon">🌍</span>
+                Connaissance Du Monde
+            </button>
+            <button class="nav-btn" data-strand="litterature">
+                <span class="nav-icon">📖</span>
+                Littérature
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- History-Geography Strand -->
+            <section id="history-geography" class="strand active">
+                <h2>History-Geography</h2>
+                
+                <!-- History Subsection -->
+                <div class="subsection">
+                    <div class="subsection-header">
+                        <h3>📜 History</h3>
+                        <button class="add-pdf-btn" data-subsection="history">+ Add PDF</button>
+                    </div>
+                    <div class="pdf-list" id="history-pdfs">
+                        <p class="empty-message">No PDFs yet. Add your first study material!</p>
+                    </div>
+                </div>
+
+                <!-- Geography Subsection -->
+                <div class="subsection">
+                    <div class="subsection-header">
+                        <h3>🗺️ Geography</h3>
+                        <button class="add-pdf-btn" data-subsection="geography">+ Add PDF</button>
+                    </div>
+                    <div class="pdf-list" id="geography-pdfs">
+                        <p class="empty-message">No PDFs yet. Add your first study material!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Connaissance Du Monde Strand -->
+            <section id="connaissance" class="strand">
+                <h2>Connaissance Du Monde</h2>
+                <div class="subsection">
+                    <div class="subsection-header">
+                        <h3>🌍 Global Knowledge</h3>
+                        <button class="add-pdf-btn" data-subsection="connaissance">+ Add PDF</button>
+                    </div>
+                    <div class="pdf-list" id="connaissance-pdfs">
+                        <p class="empty-message">No PDFs yet. Add your first study material!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Littérature Strand -->
+            <section id="litterature" class="strand">
+                <h2>Littérature</h2>
+                <div class="subsection">
+                    <div class="subsection-header">
+                        <h3>📚 Literature Resources</h3>
+                        <button class="add-pdf-btn" data-subsection="litterature">+ Add PDF</button>
+                    </div>
+                    <div class="pdf-list" id="litterature-pdfs">
+                        <p class="empty-message">No PDFs yet. Add your first study material!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Hidden file input -->
+        <input type="file" id="file-input" accept=".pdf" style="display: none;">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
